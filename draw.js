@@ -17,9 +17,10 @@ function Circle(x, y) {
   this.x = x;
   this.y = y;
   this.r = 1;
+  this.rate = 1;
 
   this.grow = function() {
-    this.r ++;
+    this.r += this.rate;
   };
 
   this.draw = function() {
